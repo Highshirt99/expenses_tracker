@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script  src="script.js"></script>
+</head>
+<body>
+
+
+    <div class="walletfund">
+    <p>Fund your wallet.</p>
+   
+    <input type="number" name="" id="fund" placeholder="Enter amount in $." required>
+
+    <button onclick="displayCon2()">Fund</button>
+
+</div>
+
+<div class="con2">
+
+<div class="budget-con">
+    <h3> Balance: $<span  id="balance">
+        0
+    </span>
+
+    </h3>
+    <input type="number" id="budget"  placeholder="Enter budget." required>
+    
+    
+
+    <button onclick="getBudget()">Submit</button>
+
+    <br><br>
+
+
+    <button onclick="displayCon()">Fund your wallet.</button>
+  
+    
+</div>
+<br><br>
+<div class="expenses-con">
+    <p>Withdraw from your wallet.</p>
+    <input type="text" name="" id="details" placeholder="Narration" required>
+    <br><br>
+    <input type="number" name="" id="expenses" placeholder="Enter amount in $." required>
+    <br><br>
+    <button onclick="showExpenses()">Withdraw</button>
+
+    <p >Budget : $<span id="budget-info">0</span></p>
+    <progress id ="bar" value="100" max="100"></progress>
+    <p id="per"></p>
+ 
+
+    <p >Expenses:</p>
+    <ul id="expenses-info">
+
+    </ul>
+
+    
+</div>
+</body>
+</html>
