@@ -81,7 +81,7 @@ let budget = document.getElementById("budget").value;
 let budgetInfo = document.getElementById("budget-info")
 let newBudget = (+(budgetInfo.innerHTML) - (+(expenses)))
 
-if(expenses <=  +(budgetInfo.innerHTML) && expenses > 0 ) {
+if(expenses <=  +(budgetInfo.innerHTML) && +(expenses) > 0   && narration != "") {
 expensesInfo.innerHTML += `<li> ${narration} : $${expenses} </li>`
 expensesInfo.style.color = "red"
 let percentage = (newBudget/(+(budget)) * 100).toFixed(2)
